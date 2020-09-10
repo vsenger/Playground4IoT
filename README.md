@@ -1,13 +1,13 @@
 # Playground4IoT
 
-"There are three states of being: Not knowing, action and completion"
+*"There are three states of being: Not knowing, action and completion"*
 Cult of Done Manifesto, Bre Pettis
 
 Welcome Playgrounder to our repository where you can find libraries, firmwares, Arduino Sketch, tutorials and more for Playground4IoT development board. Playground4IoT is a development board that make easy and fun to start playing, prototyping and deploying connected devices projects using AWS Services like AWS IoT Core and Amazon FreeRTOS with security for adults, deployment over-the-air and management of big fleets of devices in production.
 
 ## Technical Resume
 
-"Accept that everything is a draft. It helps to get it done."
+*"Accept that everything is a draft. It helps to get it done."*
 The Cult of Done Manifesto, Bre Pettis
 
 * Based on ESP32 SoC (System-on-chip) with WIFI and Bluetooth
