@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-03-31T14:54:20Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Board AWS_ESP32_v6"
+        },
+        "Owner": "Jose Luiz Sanchez Lorenzo <lorenzojoseluizsanchez@gmail.com>",
+        "Size": {
+            "X": 90.844875,
+            "Y": 56.1505
+        }
+    }
+}

@@ -1,0 +1,31 @@
+##################################################################
+# Syntax Coloring Map For ClosedCube HDC1080 High Accuracy Digital Humidity and Temperature Sensor breakout board
+##################################################################
+
+##################################################################
+# Datatypes (KEYWORD1)
+##################################################################
+
+ClosedCube_HDC1080	KEYWORD1
+
+##################################################################
+# Methods and Functions (KEYWORD2)
+##################################################################
+
+begin KEYWORD2
+readManufacturerID KEYWORD2
+readDeviceID KEYWORD2
+
+readTemperature KEYWORD2
+readHumidity KEYWORD2
+
+readT KEYWORD2
+readH KEYWORD2
+
+readRegister KEYWORD2
+writeRegister KEYWORD2
+
+heatUp KEYWORD2
+
+readSerialNumber KEYWORD2
+setResolution KEYWORD2
