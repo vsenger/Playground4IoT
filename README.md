@@ -10,17 +10,17 @@ Welcome Playgrounder to our repository where you can find libraries, firmwares, 
 "Accept that everything is a draft. It helps to get it done."
 The Cult of Done Manifesto, Bre Pettis
 
-### Based on ESP32 SoC (System-on-chip) with WIFI and Bluetooth
-### Accelerometer Sensor
-### Temperature, Humidity and Pressure sensor
-### Light sensor
-### Battery voltage sensor
-### Solar panel sensor
-### Groovy connectors
-### External Solar Panel Connector
-### External Battery Connector
-### Battery charger system (cable / solar panel)
-### And a lot of love!
+* Based on ESP32 SoC (System-on-chip) with WIFI and Bluetooth
+* Accelerometer Sensor
+* Temperature, Humidity and Pressure sensor
+* Light sensor
+* Battery voltage sensor
+* Solar panel sensor
+* Groovy connectors
+* External Solar Panel Connector
+* External Battery Connector
+* Battery charger system (cable / solar panel)
+* And a lot of love!
 
 ## Let's Play!
 
