@@ -5,10 +5,14 @@ Cult of Done Manifesto, Bre Pettis
 
 Welcome Playgrounder to our repository where you can find libraries, firmwares, Arduino Sketch, tutorials and more for Playground4IoT development board. Playground4IoT is a development board that make easy and fun to start playing, prototyping and deploying connected devices projects using AWS Services like AWS IoT Core and Amazon FreeRTOS with security for adults, deployment over-the-air and management of big fleets of devices in production.
 
+This project was done by AWS Developer Relations Team but is open-source, don't hesitate to clone it, produce, have fun, make money, change the world or anything else you dream. Developer Relations Team exist to help you to make it happen, count on us.. ALWAYS!
+
 ## Technical Resume
 
 *"Accept that everything is a draft. It helps to get it done."*
 The Cult of Done Manifesto, Bre Pettis
+
+This board is based on ESP32, a powerful SoC that can run in low-energy with solar panel and simple battery forever and you can program using Arduino IDE, libraries and frameworks or you can go deeper and programa with Amazon FreeRTOS for industry ready devices.
 
 * Based on ESP32 SoC (System-on-chip) with WIFI and Bluetooth
 * Accelerometer Sensor
@@ -24,7 +28,7 @@ The Cult of Done Manifesto, Bre Pettis
 
 ## Let's Play!
 
-"People without dirty hands are wrong, doing something makes you right!"
+*"People without dirty hands are wrong, doing something makes you right!"*
 The Cult of Done Manifesto, Bre Pettis
 
 To start playing with this device (or toy?!?) we have those main steps:
@@ -49,4 +53,4 @@ Now let's go deep in each step!
 
 ## 6. LEt's Play! 
 
-Bum! Just uo
+	
