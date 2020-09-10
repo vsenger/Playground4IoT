@@ -32,12 +32,12 @@ This board is based on ESP32, a powerful SoC that can run in low-energy with sol
 The Cult of Done Manifesto, Bre Pettis
 
 To start playing with this device (or toy?!?) we have those main steps:
-### 1. Install Playground4IoT usb driver
-### 2. Install and setup Arduino IDE environment: install Arduino IDE itself, setup for ESP32 development and then add libraries.
-### 3. Create a thing to represent your board in AWS IoT Core
-### 4. Setup the wifi credential, root-ca, device certificate and private key inside the Arduino C code
-### 5. Upload the Arduino code to your board using an USB cable
-### 6. Open AWS IoT Core console and start playing with your board
+* 1. Install Playground4IoT usb driver
+* 2. Install and setup Arduino IDE environment: install Arduino IDE itself, setup for ESP32 development and then add libraries.
+* 3. Create a thing to represent your board in AWS IoT Core
+* 4. Setup the wifi credential, root-ca, device certificate and private key inside the Arduino C code
+* 5. Upload the Arduino code to your board using an USB cable
+* 6. Open AWS IoT Core console and start playing with your board
 
 Now let's go deep in each step!
 
