@@ -33,7 +33,8 @@ The Cult of Done Manifesto, Bre Pettis
 
 To start playing with this device (or toy?!?) we have those main steps:
 1. Install Playground4IoT usb driver
-1. Install and setup Arduino IDE environment: install Arduino IDE itself, setup for E	SP32 development and then add libraries.
+1. Install and setup Arduino IDE environment: install Arduino IDE itself and setup for E	SP32 development 
+1. Install Arduino libraries for the Playground4IoT sensors
 1. Create a thing to represent your board in AWS IoT Core
 1. Setup the wifi credential, root-ca, device certificate and private key inside the Arduino C code
 1. Upload the Arduino code to your board using an USB cable
@@ -81,13 +82,30 @@ All done with ESP32 support for Arduino IDE:
 
 ![tutorial image](/img/06.png)
 
-## 3. AWS IoT Core Setup
+6) Choose the "ESP32 Dev Module" in boards manager:
+
+![tutorial image](/img/07.png)
+
+7) Now it's time to find your USB port, don't plug your board in your computer and check which ports you have on the Tools -> Port menu:
+
+![tutorial image](/img/08.png)
+
+8) Now plug your Playground4IoT and check this menu again, you should see something new like here that COM7 is the choosen port:
+
+![tutorial image](/img/09.png)
 
 
-## 4. Let's code!
+## 3. Install Arduino Libraries for our Sensors
 
-## 5. Upload and fingers crossed
+The Playground for IoT uses some sensors that has specific C libraries to make it easy to use. All we need to do is copy the folder in /Playground4IoT/Arduino/Libraries to your $HOME/Documents/Arduino/Library.
 
-## 6. LEt's Play! 
+
+## 4. AWS IoT Core Setup
+
+## 5. Let's code!
+
+## 6. Upload and fingers crossed
+
+## 7. Let's Play! 
 
 	
