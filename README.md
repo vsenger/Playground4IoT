@@ -58,6 +58,7 @@ After installing the Arduino IDE we must add the ESP32 support.
 1) Open your Arduino IDE
 
 2) Go to File -> Preferences
+
 ![tutorial image](/img/01.png)
 
 3) Enter https://dl.espressif.com/dl/package_esp32_index.json into the “Additional Board Manager URLs” field as shown in the figure below. Then, click the “OK” button:
