@@ -97,12 +97,44 @@ All done with ESP32 support for Arduino IDE:
 
 ## 3. Install Arduino Libraries for our Sensors
 
-The Playground for IoT uses some sensors that has specific C libraries to make it easy to use. All we need to do is copy the folder in /Playground4IoT/Arduino/Libraries to your $HOME/Documents/Arduino/Library.
+The Playground for IoT uses some sensors that has specific C libraries to make it easy to use. All we need to do is copy the folders in /Playground4IoT/Arduino/Libraries to your $HOME/Documents/Arduino/Library.
 
 ![tutorial image](/img/libs.png)
 
 
 ## 4. AWS IoT Core Setup
+
+1) Now we need to setup the cloud side of the moon... We will create a thing to represent our Playground4IoT board and also the certificate and security keys. Open your AWS IoT Core Console and click Manage -> Things - Create:
+
+![tutorial image](/img/awsiot-01.png)
+
+2) Let's choose "Create a single thing"
+
+![tutorial image](/img/awsiot-02.png)
+
+3) Now give a name to your thing and click next
+
+![tutorial image](/img/awsiot-03.png)
+
+4) Now choose "One-click certificate creation"
+
+![tutorial image](/img/awsiot-04.png)
+
+5) You can finally download your thing's certificate and private key
+
+![tutorial image](/img/awsiot-05.png)
+
+6) Click Activate to make your certicates valid
+
+![tutorial image](/img/awsiot-06.png)
+
+7) Download ROOT Certifica Authoroty clicking in "A root CA for AWS IoT Download"
+
+![tutorial image](/img/awsiot-06.png)
+
+8) You will be redirected to another page that you can choose some options:
+
+![tutorial image](/img/awsiot-07.png)
 
 ## 5. Let's code!
 
