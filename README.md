@@ -32,20 +32,33 @@ This board is based on ESP32, a powerful SoC that can run in low-energy with sol
 The Cult of Done Manifesto, Bre Pettis
 
 To start playing with this device (or toy?!?) we have those main steps:
-* 1. Install Playground4IoT usb driver
-* 2. Install and setup Arduino IDE environment: install Arduino IDE itself, setup for ESP32 development and then add libraries.
-* 3. Create a thing to represent your board in AWS IoT Core
-* 4. Setup the wifi credential, root-ca, device certificate and private key inside the Arduino C code
-* 5. Upload the Arduino code to your board using an USB cable
-* 6. Open AWS IoT Core console and start playing with your board
+1. Install Playground4IoT usb driver
+1. Install and setup Arduino IDE environment: install Arduino IDE itself, setup for E	SP32 development and then add libraries.
+1. Create a thing to represent your board in AWS IoT Core
+1. Setup the wifi credential, root-ca, device certificate and private key inside the Arduino C code
+1. Upload the Arduino code to your board using an USB cable
+1. Open AWS IoT Core console and start playing with your board
 
 Now let's go deep in each step!
 
 ## 1. Install Playground4IoT usb driver
 
+Our board uses a chip called CH340 to communicate throught the USB-C port, this chip is actualy a Serial - USB converter so once you have the driver installed you will see the Playground4IoT as a Serial port (windows: COM1, COM7, COMx - linux /dev/acm0 /dev/usb0 - macs /dev/cu.wchusbserial).
+
+Follow this nice sparkfun.com tutorial to install the driver: https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
+
 ## 2. Arduino IDE
 
+We have different ways to start programming our Playground4IoT that is based on ESP32 SoC and the simple way to do it is using Arduino IDE. It's a very popular IDE / tool for writing firmwares they call sketches using a simplified C sintax with many libraries to abstract all the hardware and C complex code.
+
+To install Arduino IDE go to Arduino Web Site, download and install it, it's quite simlpe. Here is the link: https://www.arduino.cc/en/Main/Software
+
+After installing the Arduino IDE we must add the ESP32 support. 
+
+1. Open your Arduino IDE
+
 ## 3. AWS IoT Core Setup
+
 
 ## 4. Let's code!
 
