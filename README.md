@@ -60,8 +60,13 @@ After installing the Arduino IDE we must add the ESP32 support.
 1. Go to File -> Preferences
 ![tutorial image](/img/01.png)
 
-1. Digite https://dl.espressif.com/dl/package_esp32_index.json no campo “URLs adicionais do gerenciador de placa” conforme mostrado na figura abaixo. Em seguida, clique no botão “OK”:<br/>
+1. Enter https://dl.espressif.com/dl/package_esp32_index.json into the “Additional Board Manager URLs” field as shown in the figure below. Then, click the “OK” button:
+
 ![tutorial image](/img/02.png)
+
+1. Open the Boards Manager. Go to Tools > Board > Boards Manager…
+
+![tutorial image](/img/03.png)
 
 ## 3. AWS IoT Core Setup
 
