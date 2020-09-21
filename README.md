@@ -99,6 +99,8 @@ All done with ESP32 support for Arduino IDE:
 
 The Playground for IoT uses some sensors that has specific C libraries to make it easy to use. All we need to do is copy the folder in /Playground4IoT/Arduino/Libraries to your $HOME/Documents/Arduino/Library.
 
+![tutorial image](/img/libs.png)
+
 
 ## 4. AWS IoT Core Setup
 
