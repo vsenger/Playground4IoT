@@ -55,18 +55,19 @@ To install Arduino IDE go to Arduino Web Site, download and install it, it's qui
 
 After installing the Arduino IDE we must add the ESP32 support. 
 
-1. Open your Arduino IDE
+1) Open your Arduino IDE
 
-1. Go to File -> Preferences
+2) Go to File -> Preferences
 ![tutorial image](/img/01.png)
 
-1. Enter https://dl.espressif.com/dl/package_esp32_index.json into the “Additional Board Manager URLs” field as shown in the figure below. Then, click the “OK” button:
+3) Enter https://dl.espressif.com/dl/package_esp32_index.json into the “Additional Board Manager URLs” field as shown in the figure below. Then, click the “OK” button:
 
 ![tutorial image](/img/02.png)
 
-1. Open the Boards Manager. Go to Tools > Board > Boards Manager…
+4) Open the Boards Manager. Go to Tools > Board > Boards Manager…
 
 ![tutorial image](/img/03.png)
+
 
 ## 3. AWS IoT Core Setup
 
