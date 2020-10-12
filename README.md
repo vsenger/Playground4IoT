@@ -171,7 +171,26 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 
 ## 6. Upload and fingers crossed
 
+Now click the Upload button and wait until it compile and upload to your board. Keep your eyes in the log message panel, it's "normal" to have warning messages :).
+
+![tutorial image](/img/arduino-upload.png)
+
 
 ## 7. Let's Play! 
+
+Time to have fun! Open your AWS IoT Core Console and click Test
+
+![tutorial image](/img/aws-iot-result-01.png)
+
+Type playground/sensors and click Subscribe
+
+![tutorial image](/img/aws-iot-result-02.png)
+
+Type playground/sensors and click Subscribe
+
+Now you should start seeing the json results!
+
+![tutorial image](/img/aws-iot-result-03.png)
+
 
 	
