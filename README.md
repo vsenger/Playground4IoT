@@ -192,5 +192,19 @@ Now you should start seeing the json results!
 
 ![tutorial image](/img/aws-iot-result-03.png)
 
+## 8. Oppss, not working and now?
+
+Chime Vini vsenger@ is now the first option but you can check the following:
+
+1. Is your USB port ok?
+2. Did you get any error message during the compile and upload process?
+3. Did you choose the right Arduino Board setting to ESP32 Dev?
+4. Can you open the Arduino Serial monitor?
+
+
+
+## 9. More to come!
+
+From here you can start changing the Arduino code to improve anything you want or do some local logic implementation reacting locally based on sensors data.
 
 	
