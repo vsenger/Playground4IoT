@@ -150,11 +150,27 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 
 ![tutorial image](/img/arduino-firmware-01.png)
 
-4) Let's configure our credentials
-
 ![tutorial image](/img/arduino-firmware-02.png)
 
+4) Setup your SSID and password: scroll down to the line around 60 and change:
+
+1. The host name to your AWS IoT Core Thing name
+2. SSID and passsword
+3. Optional: change the name of the topics we are going to use to communicate with our board 
+
+![tutorial image](/img/arduino-firmware-03.png)
+
+5) Let's configure our credentials: click in secrets.h tab and then update:
+
+1. AWS IoT Core endpoint
+2. ROOT CA certificate: open the downloaded file and copy and paste the content
+3. Same things for Device Certificate and Private Key. 
+
+![tutorial image](/img/arduino-firmware-04.png)
+
+
 ## 6. Upload and fingers crossed
+
 
 ## 7. Let's Play! 
 
