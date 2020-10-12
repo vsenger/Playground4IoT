@@ -136,7 +136,23 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 
 ![tutorial image](/img/awsiot-07.png)
 
+9) Now we need to take note of our AWS IoT Core endpoint to use in the next step. Open AWS IoT Core Console and click settings
+
+![tutorial image](/img/awsiot-08.png)
+
 ## 5. Let's code!
+
+1) Clone Playground4IoT repo: git clone https://github.com/vsenger/Playground4IoT
+
+2) Open your Arduino IDE and make sure you selected the right USB port and ESP32 board!
+
+3) Open the Arduino Sketch with current the firmware located inside the folder you clone the github repo: Playground4IoT/arduino/Playground4IoTFirmware-V0/
+
+![tutorial image](/img/arduino-firmware-01.png)
+
+4) Let's configure our credentials
+
+![tutorial image](/img/arduino-firmware-02.png)
 
 ## 6. Upload and fingers crossed
 
