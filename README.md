@@ -61,7 +61,9 @@ Now let's go deep in each step!
 
 ## 1. Install Playground4IoT usb driver
 
-Our board uses a chip called CH340 to communicate throught the USB-C port, this chip is actualy a Serial - USB converter so once you have the driver installed you will see the Playground4IoT as a Serial port (windows: COM1, COM7, COMx - linux /dev/acm0 /dev/usb0 - macs /dev/cu.wchusbserial).
+Our board uses a chip called CH340 to communicate throught the USB-C port, this chip is actualy a Serial - USB converter so once you have the driver installed you will see the Playground4IoT as a Serial port (windows: COM1, COM7, COMx - linux /dev/acm0 /dev/usb0 - macs /dev/cu.wchusbserial). 
+
+> **_NOTE:_**  MacOS Mojave (and newer) already includes a CH34x driver from Apple. Do not install other versions as it may cause issues. Read more on https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver/pull/19.
 
 Follow this nice sparkfun.com tutorial to install the driver: https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
 
