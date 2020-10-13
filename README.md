@@ -31,19 +31,7 @@ This board is based on ESP32, a powerful SoC that can run in low-energy with sol
 *"People without dirty hands are wrong, doing something makes you right!"*
 The Cult of Done Manifesto, Bre Pettis
 
-To start playing with this device (or toy?!?) we have those main steps:
-1. Install Playground4IoT usb driver
-1. Install and setup Arduino IDE environment: install Arduino IDE itself and setup for E	SP32 development 
-1. Install Arduino libraries for the Playground4IoT sensors
-1. Create a thing to represent your board in AWS IoT Core
-1. Setup the wifi credential, root-ca, device certificate and private key inside the Arduino C code
-1. Upload the Arduino code to your board using an USB cable
-1. Open AWS IoT Core console and start playing with your board
-
 Here we have a simple description image showing the main parts:
-
-![tutorial image](/img/playground-01.png)
-
 
 1. Power on / off
 2. IoT Button: you can use as IoT button or anything else!
@@ -55,7 +43,19 @@ Here we have a simple description image showing the main parts:
 8. External Battery Connector
 9. USB C: you can use to charge the battery (nice!!!), to upload firmware hard-wire (but you can do it over-the-air!) or to debug your board
 10. USB to Serial Controller: this is the CH340 chip, you may need or not to install a driver for it
-11. You will find three additional connectors under the board and they are Groove compatible  
+11. You will find three additional connectors under the board and they are Groove compatible 
+
+![tutorial image](/img/playground-01.png)
+
+To start playing with this device (or toy?!?) we have those main steps:
+1. Install Playground4IoT usb driver
+1. Install and setup Arduino IDE environment: install Arduino IDE itself and setup for E	SP32 development 
+1. Install Arduino libraries for the Playground4IoT sensors
+1. Create a thing to represent your board in AWS IoT Core
+1. Setup the wifi credential, root-ca, device certificate and private key inside the Arduino C code
+1. Upload the Arduino code to your board using an USB cable
+1. Open AWS IoT Core console and start playing with your board
+ 
 
 Now let's go deep in each step!
 
