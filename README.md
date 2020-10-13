@@ -40,6 +40,23 @@ To start playing with this device (or toy?!?) we have those main steps:
 1. Upload the Arduino code to your board using an USB cable
 1. Open AWS IoT Core console and start playing with your board
 
+Here we have a simple description image showing the main parts:
+
+![tutorial image](/img/playground-01.png)
+
+
+1. Power on / off
+2. IoT Button: you can use as IoT button or anything else!
+3. The loooovely OLED display: you can code turn on and off to save energy, sure thing!
+4. ESP32: the core! and it's compatible with Amazon FreeRTOS and very cheap
+5. GPIO: the place you can extend in a "maker way"
+6. Reset Button
+7. Solar panel connector: yesss! I can survive with Sun, at least in Brazil ahahah
+8. External Battery Connector
+9. USB C: you can use to charge the battery (nice!!!), to upload firmware hard-wire (but you can do it over-the-air!) or to debug your board
+10. USB to Serial Controller: this is the CH340 chip, you may need or not to install a driver for it
+11. You will find three additional connectors under the board and they are Groove compatible  
+
 Now let's go deep in each step!
 
 ## 1. Install Playground4IoT usb driver
