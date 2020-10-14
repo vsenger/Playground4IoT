@@ -1,42 +1,42 @@
-/****** ESP32 GPIO MAP ******  
+/****** ESP32 GPIO MAP ******
 
-GPIO0 -> Firmware Upload Mode
-GPIO1 -> TXD
-GPIO3 -> RXD
+  GPIO0 -> Firmware Upload Mode
+  GPIO1 -> TXD
+  GPIO3 -> RXD
 
-GPIO13 -> Led 3
-GPIO14 -> Led 4
-GPIO18 -> Led 1
-GPIO19 -> Led 2
+  GPIO13 -> Led 3
+  GPIO14 -> Led 4
+  GPIO18 -> Led 1
+  GPIO19 -> Led 2
 
-GPIO16 -> Serial 2 (RX)
-GPIO17 -> Serial 2 (TX)
+  GPIO16 -> Serial 2 (RX)
+  GPIO17 -> Serial 2 (TX)
 
-GPIO21 -> I2C (SDA)
-GPIO22 -> I2C (SCL)
+  GPIO21 -> I2C (SDA)
+  GPIO22 -> I2C (SCL)
 
-GPIO23 -> User Button (0=pressed / 1=not pressed)
+  GPIO23 -> User Button (0=pressed / 1=not pressed)
 
-GPIO25 -> Battery State (0=Charging / 1=charged or not charging)
-GPIO26 -> I2C sensors Interrupt Input (optional- must be configured conecting SJ1 or SJ5 or SJ7 or SJ8 or SJ9)
+  GPIO25 -> Battery State (0=Charging / 1=charged or not charging)
+  GPIO26 -> I2C sensors Interrupt Input (optional- must be configured conecting SJ1 or SJ5 or SJ7 or SJ8 or SJ9)
 
-GPIO27 -> Sensors and Display Power control (0=Power OFF / 1=Power ON)
+  GPIO27 -> Sensors and Display Power control (0=Power OFF / 1=Power ON)
 
-GPIO32 -> Battery voltage (Analog INPUT)
-GPIO33 -> (External Analog INPUT)
-GPIO34 -> (External Analog INPUT)
-GPIO35 -> Solar Panel voltage (Analog INPUT)
+  GPIO32 -> Battery voltage (Analog INPUT)
+  GPIO33 -> (External Analog INPUT)
+  GPIO34 -> (External Analog INPUT)
+  GPIO35 -> Solar Panel voltage (Analog INPUT)
 
-GPIO6 a GPIO11 -> Do not Use (Flash Memory)
+  GPIO6 a GPIO11 -> Do not Use (Flash Memory)
 
-GPIO2 -> External GPIO
-GPIO4 -> External GPIO
-GPIO5 ->  External GPIO
-GPI12 ->  External GPIO
-GPI15 ->  External GPIO
-GPI12 ->  External GPIO
-SensorVP - >  External GPIO
-SensorVN - >  External GPIO
+  GPIO2 -> External GPIO
+  GPIO4 -> External GPIO
+  GPIO5 ->  External GPIO
+  GPI12 ->  External GPIO
+  GPI15 ->  External GPIO
+  GPI12 ->  External GPIO
+  SensorVP - >  External GPIO
+  SensorVN - >  External GPIO
 
 */
 #include "secrets.h"
@@ -71,7 +71,7 @@ const char* password = "iotiotiot";
 
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
- 
+
 // I2C address of the TSL2571 0x39(57)
 #define Addr 0x39
 byte data[4];
@@ -171,13 +171,13 @@ MQTTClient client = MQTTClient(512);
 
 
 void setup() {
-  pinMode(27,OUTPUT);       //power ON sensors and OLED display
-  digitalWrite(27,HIGH);
-  pinMode(25,INPUT);        
-  pinMode(23,INPUT_PULLUP);    //enable user button pull-up
+  pinMode(27, OUTPUT);      //power ON sensors and OLED display
+  digitalWrite(27, HIGH);
+  pinMode(25, INPUT);
+  pinMode(23, INPUT_PULLUP);   //enable user button pull-up
   delay(2000);
 
-  Wire.begin();  
+  Wire.begin();
   ssd1306_128x64_i2c_init();                     // Initialze SSD1306 OLED display
   ssd1306_clearScreen( );
   ssd1306_drawBitmap(0, 0, 128, 64, Logo_AWS);
@@ -188,10 +188,10 @@ void setup() {
   //oled.setTextXY(0,0);              // Set cursor position, start of line 0
 
   Serial.begin(115200);
-  pinMode(led1,OUTPUT);
-  pinMode(led2,OUTPUT);
-  pinMode(led3,OUTPUT);
-  pinMode(led4,OUTPUT);
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
 
   inicializaAcelerometro();
   inicializaHDC1080();
@@ -229,7 +229,7 @@ void loop() {
   le_battery_status();
   userButtonState = digitalRead(23);
   buttonOled();
-  publishSensors();  
+  publishSensors();
   client.loop();
 }
 
@@ -242,15 +242,15 @@ void loop() {
 
 void connectAWS()
 {
-/*  WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  /*  WiFi.mode(WIFI_STA);
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 
-  Serial.println("Connecting to Wi-Fi");
+    Serial.println("Connecting to Wi-Fi");
 
-  while (WiFi.status() != WL_CONNECTED){
-    delay(500);
-    Serial.print(".");
-  }*/
+    while (WiFi.status() != WL_CONNECTED){
+      delay(500);
+      Serial.print(".");
+    }*/
 
   // Configure WiFiClientSecure to use the AWS IoT device credentials
   net.setCACert(AWS_CERT_CA);
@@ -270,7 +270,7 @@ void connectAWS()
     delay(100);
   }
 
-  if(!client.connected()){
+  if (!client.connected()) {
     Serial.println("AWS IoT Timeout!");
     return;
   }
@@ -312,7 +312,7 @@ void messageHandler(String &topic, String &payload) {
   Serial.println("receiving MQTT message");
   Serial.println("incoming: " + topic + " - " + payload);
 
-//  StaticJsonDocument<200> doc;
-//  deserializeJson(doc, payload);
-//  const char* message = doc["message"];
+  //  StaticJsonDocument<200> doc;
+  //  deserializeJson(doc, payload);
+  //  const char* message = doc["message"];
 }
