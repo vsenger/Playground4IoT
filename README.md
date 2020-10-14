@@ -43,7 +43,7 @@ Here we have a simple description image showing the main parts:
 8. External Battery Connector
 9. USB C: you can use to charge the battery (nice!!!), to upload firmware hard-wire (but you can do it over-the-air!) or to debug your board
 10. USB to Serial Controller: this is the CH340 chip, you may need or not to install a driver for it
-11. You will find three additional connectors under the board and they are Groove compatible 
+11. You will find three additional connectors under the board and they are Grove compatible, so you can plug [200+ different sensors](https://www.seeedstudio.com/catalogsearch/result/index/?cat=890&q=grove).
 
 ![tutorial image](/img/playground-01.png)
 
