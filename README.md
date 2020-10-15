@@ -123,7 +123,7 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 
 ## 4. AWS IoT Core Setup
 
-1) Now we need to setup the cloud side of the moon... We will create a thing to represent our Playground4IoT board and also the certificate and security keys. Open your AWS IoT Core Console and click Manage -> Things -> Register a thing:
+1) Now we need to setup the cloud side of the moon... We will create a thing to represent our Playground4IoT board and also the certificate and security keys. Open your AWS IoT Core Console and click Manage -> Things -> Register a single AWS IoT thing:
 
 ![tutorial image](/img/awsiot-01.png)
 
@@ -158,6 +158,33 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 9) Now we need to take note of our AWS IoT Core endpoint to use in the next step. Open AWS IoT Core Console and click settings
 
 ![tutorial image](/img/awsiot-08.png)
+
+10) We need to create a policy for our device, click Policies -> Create
+
+![tutorial image](/img/awsiot-10.png)
+
+
+11) Give a name and choose action iot:* and replace topic name with * (just for testing proposal, the policy for real projects should be restrictive!). Choose Effect Allow and click Create
+
+![tutorial image](/img/awsiot-11.png)
+
+12) Now let's associate the policy with the Thing Certificate, to do this click in the IoT Thing you've created, click Security and then click in the Certificate:
+
+![tutorial image](/img/awsiot-12.png)
+
+13) Click Policies
+
+![tutorial image](/img/awsiot-13.png)
+
+14) Click Actions menu -> Attach Policy
+
+![tutorial image](/img/awsiot-14.png)
+
+15) Choose the created Policy and click Attach:
+
+![tutorial image](/img/awsiot-15.png)
+
+Ufff, done!
 
 ## 5. Let's code!
 
