@@ -123,7 +123,7 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 
 ## 4. AWS IoT Core Setup
 
-1) Now we need to setup the cloud side of the moon... We will create a thing to represent our Playground4IoT board and also the certificate and security keys. Open your AWS IoT Core Console and click Manage -> Things - Create:
+1) Now we need to setup the cloud side of the moon... We will create a thing to represent our Playground4IoT board and also the certificate and security keys. Open your AWS IoT Core Console and click Manage -> Things -> Register a thing:
 
 ![tutorial image](/img/awsiot-01.png)
 
@@ -147,7 +147,7 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 
 ![tutorial image](/img/awsiot-06.png)
 
-7) Download ROOT Certifica Authoroty clicking in "A root CA for AWS IoT Download"
+7) Download ROOT Certificate Authority clicking in "A root CA for AWS IoT Download" (this opens the AWS documentation and you'll need to choose one of the CAs on the page)
 
 ![tutorial image](/img/awsiot-06.png)
 
