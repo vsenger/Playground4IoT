@@ -147,7 +147,7 @@ The Playground for IoT uses some sensors that has specific C libraries to make i
 
 ![tutorial image](/img/awsiot-06.png)
 
-7) Download ROOT Certifica Authoroty clicking in "A root CA for AWS IoT Download"
+7) Download ROOT Certificate Authority clicking in "A root CA for AWS IoT Download" (this opens the AWS documentation and you'll need to choose one of the CAs on the page)
 
 ![tutorial image](/img/awsiot-06.png)
 
